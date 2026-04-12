@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
+
 class Calculator{
+
 private:
 
 int num1 {};
@@ -8,12 +9,15 @@ int num2{};
 char operators{};
 
 public:
+
 Calculator (int a, int b, char c)
  :  num1 {a},  num2{b}, operators {c}
 {}
+
 int getnum1 () {return num1;}
 int getnum2 () {return num2;}
 char getoperators () {return operators;}
+
 void setnum1 (){
     int a;
     std::cout << "Enter a number: ";
