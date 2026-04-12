@@ -10,7 +10,7 @@ char operators{};
 
 public:
 
-Calculator (int a, int b, char c)
+Calculator (double a, double b, char c)
  :  num1 {a},  num2{b}, operators {c}
 {}
 
