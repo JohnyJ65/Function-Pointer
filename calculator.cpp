@@ -1,11 +1,11 @@
 #include <iostream>
 
-class Calculator{
+class Calculator {
 
 private:
 
-int num1 {};
-int num2{};
+double num1 {};
+double num2{};
 char operators{};
 
 public:
@@ -14,18 +14,18 @@ Calculator (int a, int b, char c)
  :  num1 {a},  num2{b}, operators {c}
 {}
 
-int getnum1 () {return num1;}
-int getnum2 () {return num2;}
+double getnum1 () {return num1;}
+double getnum2 () {return num2;}
 char getoperators () {return operators;}
 
 void setnum1 (){
-    int a;
+    double a;
     std::cout << "Enter a number: ";
 std::cin >> a;
 num1 =a; 
 }
 void setnum2 () {
-    int a;
+    double a;
     std::cout << "Enter another number: ";
 std::cin >> a;
 num2 =a; 
@@ -44,7 +44,7 @@ switch (operators){
     case '*':
     return num1 * num2;
     case '/':
-    return static_cast<double>(num1) / num2;
+    return num1 / num2;
     default: 
     std::cout << "Error";
     return 0;
