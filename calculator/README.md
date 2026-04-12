@@ -9,12 +9,11 @@ Future improvements:
 
 Input validation
 No division by 0
+Loop for infinite usage
 
 
 ## How to Compile
-
-How to compile:
 g++ calculator.cpp -o calculator
 
-How to run:
+## How to run:
 ./calculator
